@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+
+var fs = require('fs'),
+    FakeServer = require('../lib/index').FakeServer,
+    scriptFile = process.argv[2];
+
+if (!fs.existsSync(scriptFile)) {
+  return console.warn("Usage: " + process.argv[1].replace(/^.*[\\\/]/, '') 
+                                + " <scriptFile>");
+}
+(new FakeServer({script: scriptFile})).start(function (err) {
+  if (err) {
+    console.warn(err);
+  }
+});

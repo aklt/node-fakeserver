@@ -1,0 +1,22 @@
+{
+    "name": "fakeserver",
+    "description": "Write simple scripts to fake server communication",
+    "version": "0.0.1",
+    "author": "Anders Thøgersen <anders@bladre.dk>",
+    "licenses": [ "MIT" ],
+    "main": "./lib/index.js",
+    "bin": {
+        "fake-server": "./bin/fake-server"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/aklt/node-fakeserver.git"
+    },
+    "engines": {
+        "node": ">= 0.8.0"
+    },
+    "dependencies": {
+        "coffee-script": "= 1.4.0"
+    }
+}
+
