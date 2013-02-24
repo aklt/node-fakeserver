@@ -23,17 +23,15 @@ f1.listen()
 
 Scripts consist of a title and a number of lines specifying the communication:
 
-  =`<`=
-      specifies input interpreted as a regex
+**<** specifies input interpreted as a regex
 
-  =`>`=
-      specifies output 
-      
-      * Can contain references to input using $1..$9 
-      * Binary values can be specified with \\xHH or \\xHHHH
+**>** specifies output 
+    
+    * Can contain references to input using $1..$9 
+    * Binary values can be specified with \\xHH or \\xHHHH
 
-  =`=`=
-      Specifies a function to create the output recieving the captures from
-      the `<` regex as arguments.
+**=**
+    Specifies a function to create the output recieving the captures from
+    the input regex as arguments.
 
 Have a look at the `examples/` directory.
